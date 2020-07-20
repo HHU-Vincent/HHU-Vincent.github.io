@@ -1,23 +1,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
+    <link>https://hhu-vincent.github.io/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Jul 2020 15:53:59 +0800</lastBuildDate>
     
-        <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://hhu-vincent.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     
         <item>
         <title>Blog</title>
-        <link>http://example.org/post/blog/</link>
+        <link>https://hhu-vincent.github.io/post/blog/</link>
         <pubDate>Mon, 20 Jul 2020 15:53:59 +0800</pubDate>
         
-        <guid>http://example.org/post/blog/</guid>
-        <description>My New Hugo Site http://example.org/post/blog/ -&lt;p&gt;如何用Hugo搭建个人网站
+        <guid>https://hhu-vincent.github.io/post/blog/</guid>
+        <description>My New Hugo Site https://hhu-vincent.github.io/post/blog/ -&lt;p&gt;如何用Hugo搭建个人网站
 下载和安装Hugo&lt;/p&gt;
 &lt;p&gt;Hugo是用Go语言写的，可以直接下载，不需要额外的依赖。&lt;/p&gt;
 &lt;p&gt;win64x对应的是hugo_x.xx.x_Windows-64bit.zip，下载后创建安装目录，例如D:\Hugo，之下建两个子目录bin和Sites，然后解压，例如解压到D:\Hugo\bin，把解压的hugo_x.xx.x_windows_amd64.exe文件重命名为hugo.exe，然后加到环境变量Path里，方便在命令行里使用。&lt;/p&gt;
@@ -67,7 +67,7 @@ git push -u origin master&lt;/p&gt;
 链接：https://www.jianshu.com/p/92ef4eb318a2
 来源：简书
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。&lt;/p&gt;
-- http://example.org/post/blog/ - </description>
+- https://hhu-vincent.github.io/post/blog/ - </description>
         </item>
     
     
