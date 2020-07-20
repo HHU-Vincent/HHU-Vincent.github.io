@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>http://example.org/post/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Jul 2020 15:53:59 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blog</title>
+      <link>http://example.org/post/blog/</link>
+      <pubDate>Mon, 20 Jul 2020 15:53:59 +0800</pubDate>
+      
+      <guid>http://example.org/post/blog/</guid>
+      <description>如何用Hugo搭建个人网站 下载和安装Hugo
+Hugo是用Go语言写的，可以直接下载，不需要额外的依赖。
+win64x对应的是hugo_x.xx.x_Windows-64bit.zip，下载后创建安装目录，例如D:\Hugo，之下建两个子目录bin和Sites，然后解压，例如解压到D:\Hugo\bin，把解压的hugo_x.xx.x_windows_amd64.exe文件重命名为hugo.exe，然后加到环境变量Path里，方便在命令行里使用。
+添加成功后打开cmd或者PowerShell，运行命令hugo version，如果安装成功，会输出Hugo Static Site Generator vx.xx.x 搭建个人网站
+首先要确定自己要搭建什么网站，我要建的是托管到Github的用户网站，按照Github Pages规则，网站名应该是&amp;lt;username.github.io&amp;gt;，所以我第一步创建网站用以下命令： cd D:\Hugo\Sites hugo new site brent-li.github.io
+之后在Site目录下多了一个brent-li.github.io文件夹，进入文件夹可以看到目录结构如下： |&amp;ndash; archetypes |&amp;ndash; config.toml |&amp;ndash; content |&amp;ndash; data |&amp;ndash; layouts |&amp;ndash; static
+archetypes目录里可以放一些原型，用于hugo新建内容的配置属性。config.toml是网站的配置属性文件。content文件夹里放你网站的内容，例如你发布的博客文章。data目录是Hugo使用的配置文件存放的地方。layout目录存放布局内容。static目录存放静态资源如图片、css等。
+接下来我们先在content里放点东西。命令如下： cd xxx.github.io hugo new post/开博大吉.md
+Hugo会在content目录下创建post目录，在post目录下创建开博大吉.md文件。之后打开md文件，里面已经有些内容 title: &amp;ldquo;开博大吉&amp;rdquo; date: 2019-08-13T14:49:45+08:00 draft: true &amp;mdash;包起来的内容是TOML配置信息，叫作扉页(front matter)，默认这3项，可以再添加一些，其中draft是true时Hugo不会真正发布它，要发布时改成false。修改后的扉页如下： date = &amp;ldquo;2017-02-08T22:07:46+08:00&amp;rdquo; title = &amp;ldquo;Scala学习笔记之模式匹配&amp;rdquo; draft = false tags = [&amp;ldquo;scala&amp;rdquo;,&amp;ldquo;pattern matching&amp;rdquo;,&amp;ldquo;模式匹配&amp;rdquo;] share = true 然后再把我的博客内容复制进md文件，一篇博客完成了。 本地测试
+Hugo自带服务器，可以用命令行启动： hugo server -D</description>
+    </item>
+    
+  </channel>
+</rss>
