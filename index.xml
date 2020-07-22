@@ -44,7 +44,13 @@
 &lt;li&gt;不用安装，windows下只需要一个exe程序，就可以生成静态文件了，建站过程方便。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;hugo的安装和配置&#34;&gt;Hugo的安装和配置&lt;/h2&gt;
-&lt;p&gt;因为关于Hugo的安装教程在网上可以找到很多大神的很多文章，而且并没有什么操作难度，也几乎不会碰到什么问题，所以这一部分我只简略说说。&lt;/p&gt;
+&lt;p&gt;因为关于Hugo的安装教程在网上可以找到很多文章，而且并没有什么操作难度，也几乎不会碰到什么问题，只是不要忘记配置环境变量，所以这一部分我只简略说说。
+首先进行下载安装,访问&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo&lt;/a&gt;，选择相应的版本下载并解压。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/HHU-Vincent/MarkdownPhotos/master/Hugo%20build%20process/hugodownload.jpg&#34; alt=&#34;hugodownload&#34;&gt;&lt;/p&gt;
+&lt;p&gt;接着将hugo.exe所在目录添加到环境变量path后面，然后打开win+rcmd，输入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;hugo version
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果返回相应的版本信息则说明安装配置成功。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/HHU-Vincent/MarkdownPhotos/master/Hugo%20build%20process/hugoversion.jpg&#34; alt=&#34;hugoversion&#34;&gt;&lt;/p&gt;
 - https://hhu-vincent.github.io/post/blog/ - </description>
         </item>
     
