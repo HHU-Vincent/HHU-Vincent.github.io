@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vincent</title>
@@ -6,23 +5,47 @@
     <description>Recent content on Vincent</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Vincent</copyright>
     <lastBuildDate>Mon, 20 Jul 2020 15:53:59 +0800</lastBuildDate>
     
-	<atom:link href="https://hhu-vincent.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://hhu-vincent.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Hugo静态个人主页的搭建过程</title>
-      <link>https://hhu-vincent.github.io/post/blog/</link>
-      <pubDate>Mon, 20 Jul 2020 15:53:59 +0800</pubDate>
-      
-      <guid>https://hhu-vincent.github.io/post/blog/</guid>
-      <description>前言  很早以前我就有搭建一个个人博客的想法，用来记录一下自己的学习过程和学习成果，恰巧最近有空闲的时间，于是我开始了这次实践。对于建站我属于完全零基础，所以一切都要从头学起。
-自己写or用工具搭建？ 这个是我第一个纠结的地方，说纠结其实也不然，因为我根本就不会自己写（菜鸡流泪），所以如果要自己写的话，要花不少的时间成本去学习html、css、jsp等等，所以我决定利用工具和模板，搭建一个自己的个人主页，我觉得可以在搭建完再反过来利用现成的代码来学习上述的那些建站需要的技能，作为学习的实例。
-为什么我选择了Hugo 在参观别人的blog时，我偶然看到了一个用hugo搭建的blog，这里可以放个链接：nanshu.wang，整个页面，无论是排版还是主题风格都和我理想中的blog相差无几，在对于建站工具没有更深了解的情况下，我直接选择了hugo，当然在选择后我了解到了Hugo的一些优点，这也使我坚定了用Hugo建站的想法。
- Hugo 使用的GO语言是比较新的语言； Hugo 是最新的生成器，功能方面也肯定集成了之前其他生成器的优点； 不用安装，windows下只需要一个exe程序，就可以生成静态文件了，建站过程方便。  Hugo的安装和配置 因为关于Hugo的安装教程在网上可以找到很多大神的很多文章，而且并没有什么操作难度，也几乎不会碰到什么问题，所以这一部分我只简略说说。</description>
-    </item>
+    
+        <item>
+        <title>关于我</title>
+        <link>https://hhu-vincent.github.io/about/</link>
+        <pubDate>Sun, 19 Jul 2020 15:35:58 +0800</pubDate>
+        
+        <guid>https://hhu-vincent.github.io/about/</guid>
+        <description>Vincent https://hhu-vincent.github.io/about/ -&lt;p&gt;111&lt;/p&gt;
+- https://hhu-vincent.github.io/about/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Hugo静态个人主页的搭建过程</title>
+        <link>https://hhu-vincent.github.io/post/blog/</link>
+        <pubDate>Mon, 20 Jul 2020 15:53:59 +0800</pubDate>
+        
+        <guid>https://hhu-vincent.github.io/post/blog/</guid>
+        <description>Vincent https://hhu-vincent.github.io/post/blog/ -&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;很早以前我就有搭建一个个人博客的想法，用来记录一下自己的学习过程和学习成果，恰巧最近有空闲的时间，于是我开始了这次实践。对于建站我属于完全零基础，所以一切都要从头学起。&lt;/p&gt;
+&lt;h2 id=&#34;自己写or用工具搭建&#34;&gt;自己写or用工具搭建？&lt;/h2&gt;
+&lt;p&gt;这个是我第一个纠结的地方，说纠结其实也不然，因为我根本就不会自己写（菜鸡流泪），所以如果要自己写的话，要花不少的时间成本去学习html、css、jsp等等，所以我决定利用工具和模板，搭建一个自己的个人主页，我觉得可以在搭建完再反过来利用现成的代码来学习上述的那些建站需要的技能，作为学习的实例。&lt;/p&gt;
+&lt;h2 id=&#34;为什么我选择了hugo&#34;&gt;为什么我选择了Hugo&lt;/h2&gt;
+&lt;p&gt;在参观别人的blog时，我偶然看到了一个用hugo搭建的blog，这里可以放个链接：&lt;a href=&#34;http://nanshu.wang/&#34;&gt;nanshu.wang&lt;/a&gt;，整个页面，无论是排版还是主题风格都和我理想中的blog相差无几，在对于建站工具没有更深了解的情况下，我直接选择了hugo，当然在选择后我了解到了Hugo的一些优点，这也使我坚定了用Hugo建站的想法。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hugo 使用的GO语言是比较新的语言；&lt;/li&gt;
+&lt;li&gt;Hugo 是最新的生成器，功能方面也肯定集成了之前其他生成器的优点；&lt;/li&gt;
+&lt;li&gt;不用安装，windows下只需要一个exe程序，就可以生成静态文件了，建站过程方便。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;hugo的安装和配置&#34;&gt;Hugo的安装和配置&lt;/h2&gt;
+&lt;p&gt;因为关于Hugo的安装教程在网上可以找到很多大神的很多文章，而且并没有什么操作难度，也几乎不会碰到什么问题，所以这一部分我只简略说说。&lt;/p&gt;
+- https://hhu-vincent.github.io/post/blog/ - </description>
+        </item>
+    
     
   </channel>
-</rss>
+</rss> 

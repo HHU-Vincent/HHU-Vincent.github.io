@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hhu-vincent.github.io/about/</loc>
+    <lastmod>2020-07-19T15:35:58+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hhu-vincent.github.io/post/blog/</loc>
     <lastmod>2020-07-20T15:53:59+08:00</lastmod>
   </url>
@@ -18,15 +23,7 @@
   </url>
   
   <url>
-    <loc>https://hhu-vincent.github.io/authors/</loc>
-  </url>
-  
-  <url>
     <loc>https://hhu-vincent.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://hhu-vincent.github.io/series/</loc>
   </url>
   
   <url>
