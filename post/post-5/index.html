@@ -70,24 +70,6 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script src="/vendor/js/md5.min.js"></script>
-<script>
-  var gitalk = new Gitalk({
-  clientID: 'your client id',
-  clientSecret: 'your client secret',
-  repo: 'repo name',
-  owner: 'user',
-  admin: ['user'],
-  id: md5(location.pathname),
-  distractionFreeMode: 'false'
-  });
-  window.onload = function () {
-        gitalk.render('gitalk-container')
-  }
-</script>
-
 
 
 
@@ -105,7 +87,7 @@
         </div>
         
         <div class="nav-subtitle">
-            Themed by Diary.
+            Hello World!
         </div>
         
     </a>
@@ -554,7 +536,7 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
     <a href="https://hhu-vincent.github.io">
         <div class="single-column-header-title">Vincent</div>
         
-        <div class="single-column-header-subtitle">Themed by Diary.</div>
+        <div class="single-column-header-subtitle">Hello World!</div>
         
 
     </a>
@@ -614,7 +596,7 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 <pre><code>print 'this is pre tag'
 </code></pre>
 <p>Following is the syntax highlighted code block</p>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#8b008b;font-weight:bold">func</span> <span style="color:#008b45">getCookie</span>(name <span style="color:#00688b;font-weight:bold">string</span>, r <span style="color:#8b008b;font-weight:bold">interface</span>{}) (*http.Cookie, <span style="color:#00688b;font-weight:bold">error</span>) {
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-go" data-lang="go"><span style="color:#8b008b;font-weight:bold">func</span> <span style="color:#008b45">getCookie</span>(name <span style="color:#00688b;font-weight:bold">string</span>, r <span style="color:#8b008b;font-weight:bold">interface</span>{}) (*http.Cookie, <span style="color:#00688b;font-weight:bold">error</span>) {
 	rd := r.(*http.Request)
 	cookie, err := rd.<span style="color:#008b45">Cookie</span>(name)
 	<span style="color:#8b008b;font-weight:bold">if</span> err != <span style="color:#8b008b;font-weight:bold">nil</span> {
@@ -674,8 +656,6 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
             <div class="post-comment-wrapper">
                 
 
-
-<div id="gitalk-container"></div>
 
 
 
