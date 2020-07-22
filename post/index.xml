@@ -25,11 +25,11 @@
 hugo version 如果返回相应的版本信息则说明安装配置成功。
 除此以外还需要安装 Git（下载链接）
 用来将生成好的网页推送至github服务器，相应的安装教程网上都可以找到，此处不再赘述。
-Hugo静态网页生成 Hugo自称The world’s fastest framework for building websites，在生成网页和配置网页的过程中，我感觉Hugo的语法的确很简单，没有什么繁琐的需要记忆的代码，网页的生成速度也很快，我逐渐体会到了Hugo自称的fastest。在物理和心理两个角度，给予使用者更多的便捷，这可能就是Hugo火起来的原因吧。废话不多说，进入正题。我决定先把搭建过程的所有代码一并展示出来，让读者体会到用Hugo生成一个静态网页到底有多少工作量。 在cmd中进入</description>
+Hugo静态网页生成 Hugo自称The world’s fastest framework for building websites，在生成网页和配置网页的过程中，我感觉Hugo的语法的确很简单，没有什么繁琐的需要记忆的代码，网页的生成速度也很快，我逐渐体会到了Hugo自称的fastest。在物理和心理两个角度，给予使用者更多的便捷，这可能就是Hugo火起来的原因吧。废话不多说，进入正题。我决定先把搭建过程的所有代码一并展示出来，让读者体会到用Hugo生成一个静态网页到底有多少工作量。 在cmd中进入 编辑中&amp;hellip;&amp;hellip;</description>
     </item>
     
     <item>
-      <title>中文文本测试</title>
+      <title>测试用：中文文本</title>
       <link>https://hhu-vincent.github.io/post/chinese/</link>
       <pubDate>Thu, 14 Nov 2019 11:25:05 -0400</pubDate>
       
@@ -40,7 +40,7 @@ Hugo静态网页生成 Hugo自称The world’s fastest framework for building we
     </item>
     
     <item>
-      <title>Typography - Test for features</title>
+      <title>测试用：Typography - Test for features</title>
       <link>https://hhu-vincent.github.io/post/post-5/</link>
       <pubDate>Sun, 18 Mar 2018 12:13:38 +0530</pubDate>
       
@@ -50,7 +50,7 @@ Heading 1 Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et 
     </item>
     
     <item>
-      <title>(No comment) When You Have Too Much to Do</title>
+      <title>测试用：(No comment) When You Have Too Much to Do</title>
       <link>https://hhu-vincent.github.io/post/post-1/</link>
       <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
       
@@ -61,7 +61,17 @@ How do you keep up with it all? How do you find focus and peace and get stuff ac
     </item>
     
     <item>
-      <title>Chapter VI: Esmeralda</title>
+      <title>测试用：Typography - Test for features</title>
+      <link>https://hhu-vincent.github.io/post/post-6/</link>
+      <pubDate>Sun, 18 Feb 2018 12:13:38 +0530</pubDate>
+      
+      <guid>https://hhu-vincent.github.io/post/post-6/</guid>
+      <description>Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihilse impedit quo minus id quod amets untra dolor amet sad. Sed ut perspser iciatis unde omnis iste natus error sit voluptatem accusantium doloremque laste. Dolores sadips ipsums sits.
+Heading 1 Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio.</description>
+    </item>
+    
+    <item>
+      <title>测试用：Chapter VI: Esmeralda</title>
       <link>https://hhu-vincent.github.io/post/chapter-6/</link>
       <pubDate>Fri, 14 Apr 2017 11:25:05 -0400</pubDate>
       
@@ -70,7 +80,7 @@ How do you keep up with it all? How do you find focus and peace and get stuff ac
     </item>
     
     <item>
-      <title>Chapter I: The Grand Hall</title>
+      <title>测试用：Chapter I: The Grand Hall</title>
       <link>https://hhu-vincent.github.io/post/chapter-1/</link>
       <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
       

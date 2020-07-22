@@ -63,11 +63,6 @@
   </url>
   
   <url>
-    <loc>https://hhu-vincent.github.io/post/post-1/</loc>
-    <lastmod>2018-03-18T02:01:58+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://hhu-vincent.github.io/tags/primer/</loc>
     <lastmod>2018-03-18T02:01:58+05:30</lastmod>
   </url>
@@ -83,8 +78,13 @@
   </url>
   
   <url>
-    <loc>https://hhu-vincent.github.io/post/chapter-6/</loc>
-    <lastmod>2017-04-14T11:25:05-04:00</lastmod>
+    <loc>https://hhu-vincent.github.io/post/post-1/</loc>
+    <lastmod>2018-03-18T02:01:58+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hhu-vincent.github.io/post/post-6/</loc>
+    <lastmod>2018-02-18T12:13:38+05:30</lastmod>
   </url>
   
   <url>
@@ -93,12 +93,17 @@
   </url>
   
   <url>
-    <loc>https://hhu-vincent.github.io/post/chapter-1/</loc>
-    <lastmod>2017-04-09T10:58:08-04:00</lastmod>
+    <loc>https://hhu-vincent.github.io/post/chapter-6/</loc>
+    <lastmod>2017-04-14T11:25:05-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://hhu-vincent.github.io/tags/scene/</loc>
+    <lastmod>2017-04-09T10:58:08-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hhu-vincent.github.io/post/chapter-1/</loc>
     <lastmod>2017-04-09T10:58:08-04:00</lastmod>
   </url>
   
