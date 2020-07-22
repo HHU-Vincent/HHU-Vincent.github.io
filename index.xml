@@ -26,7 +26,7 @@
     
     
         <item>
-        <title>Hugo静态个人主页的搭建过程</title>
+        <title>Hugo&#43;Github个人主页的搭建过程</title>
         <link>https://hhu-vincent.github.io/post/blog/</link>
         <pubDate>Mon, 20 Jul 2020 15:53:59 +0800</pubDate>
         
@@ -46,12 +46,19 @@
 &lt;h2 id=&#34;hugo的安装和配置&#34;&gt;Hugo的安装和配置&lt;/h2&gt;
 &lt;p&gt;因为关于Hugo的安装教程在网上可以找到很多文章，而且并没有什么操作难度，也几乎不会碰到什么问题，只是不要忘记配置环境变量，所以这一部分我只简略说说。
 首先进行下载安装,访问&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo&lt;/a&gt;，选择相应的版本下载并解压。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/HHU-Vincent/MarkdownPhotos/master/Hugo%20build%20process/hugodownload.jpg&#34; alt=&#34;hugodownload&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../static/hugobuild/hugodownload.jpg&#34; alt=&#34;hugodownload&#34;&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;p&gt;接着将hugo.exe所在目录添加到环境变量path后面，然后打开win+rcmd，输入&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;hugo version
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果返回相应的版本信息则说明安装配置成功。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/HHU-Vincent/MarkdownPhotos/master/Hugo%20build%20process/hugoversion.jpg&#34; alt=&#34;hugoversion&#34;&gt;&lt;/p&gt;
-- https://hhu-vincent.github.io/post/blog/ - </description>
+&lt;p&gt;除此以外还需要安装 &lt;a href=&#34;https://git-scm.com/downloads&#34;&gt;Git&lt;/a&gt;（下载链接）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/HHU-Vincent/MarkdownPhotos/master/Hugo%20build%20process/gitdownload.jpg&#34; alt=&#34;gitdownload&#34;&gt;&lt;/p&gt;
+&lt;p&gt;用来将生成好的网页推送至github服务器，相应的安装教程网上都可以找到，此处不再赘述。&lt;/p&gt;
+&lt;h2 id=&#34;hugo静态网页生成&#34;&gt;Hugo静态网页生成&lt;/h2&gt;
+&lt;p&gt;Hugo自称The world’s fastest framework for building websites，在生成网页和配置网页的过程中，我感觉Hugo的语法的确很简单，没有什么繁琐的需要记忆的代码，网页的生成速度也很快，我逐渐体会到了Hugo自称的fastest。在物理和心理两个角度，给予使用者更多的便捷，这可能就是Hugo火起来的原因吧。废话不多说，进入正题。我决定先把搭建过程的所有代码一并展示出来，让读者体会到用Hugo生成一个静态网页到底有多少工作量。
+在cmd中进入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;- https://hhu-vincent.github.io/post/blog/ - </description>
         </item>
     
     

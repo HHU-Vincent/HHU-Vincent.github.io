@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-<title>Hugo静态个人主页的搭建过程</title>
+<title>Hugo&#43;Github个人主页的搭建过程</title>
 
 
 
@@ -16,13 +16,16 @@
 
 
 
-<meta property="og:title" content="Hugo静态个人主页的搭建过程" />
+<meta property="og:title" content="Hugo&#43;Github个人主页的搭建过程" />
 <meta property="og:description" content="前言  很早以前我就有搭建一个个人博客的想法，用来记录一下自己的学习过程和学习成果，恰巧最近有空闲的时间，于是我开始了这次实践。对于建站我属于完全零基础，所以一切都要从头学起。
 自己写or用工具搭建？ 这个是我第一个纠结的地方，说纠结其实也不然，因为我根本就不会自己写（菜鸡流泪），所以如果要自己写的话，要花不少的时间成本去学习html、css、jsp等等，所以我决定利用工具和模板，搭建一个自己的个人主页，我觉得可以在搭建完再反过来利用现成的代码来学习上述的那些建站需要的技能，作为学习的实例。
 为什么我选择了Hugo 在参观别人的blog时，我偶然看到了一个用hugo搭建的blog，这里可以放个链接：nanshu.wang，整个页面，无论是排版还是主题风格都和我理想中的blog相差无几，在对于建站工具没有更深了解的情况下，我直接选择了hugo，当然在选择后我了解到了Hugo的一些优点，这也使我坚定了用Hugo建站的想法。
  Hugo 使用的GO语言是比较新的语言； Hugo 是最新的生成器，功能方面也肯定集成了之前其他生成器的优点； 不用安装，windows下只需要一个exe程序，就可以生成静态文件了，建站过程方便。  Hugo的安装和配置 因为关于Hugo的安装教程在网上可以找到很多文章，而且并没有什么操作难度，也几乎不会碰到什么问题，只是不要忘记配置环境变量，所以这一部分我只简略说说。 首先进行下载安装,访问Hugo，选择相应的版本下载并解压。
 接着将hugo.exe所在目录添加到环境变量path后面，然后打开win&#43;rcmd，输入
-hugo version 如果返回相应的版本信息则说明安装配置成功。" />
+hugo version 如果返回相应的版本信息则说明安装配置成功。
+除此以外还需要安装 Git（下载链接）
+用来将生成好的网页推送至github服务器，相应的安装教程网上都可以找到，此处不再赘述。
+Hugo静态网页生成 Hugo自称The world’s fastest framework for building websites，在生成网页和配置网页的过程中，我感觉Hugo的语法的确很简单，没有什么繁琐的需要记忆的代码，网页的生成速度也很快，我逐渐体会到了Hugo自称的fastest。在物理和心理两个角度，给予使用者更多的便捷，这可能就是Hugo火起来的原因吧。废话不多说，进入正题。我决定先把搭建过程的所有代码一并展示出来，让读者体会到用Hugo生成一个静态网页到底有多少工作量。 在cmd中进入" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hhu-vincent.github.io/post/blog/" />
 <meta property="article:published_time" content="2020-07-20T15:53:59+08:00" />
@@ -33,13 +36,16 @@ hugo version 如果返回相应的版本信息则说明安装配置成功。" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hugo静态个人主页的搭建过程"/>
+<meta name="twitter:title" content="Hugo&#43;Github个人主页的搭建过程"/>
 <meta name="twitter:description" content="前言  很早以前我就有搭建一个个人博客的想法，用来记录一下自己的学习过程和学习成果，恰巧最近有空闲的时间，于是我开始了这次实践。对于建站我属于完全零基础，所以一切都要从头学起。
 自己写or用工具搭建？ 这个是我第一个纠结的地方，说纠结其实也不然，因为我根本就不会自己写（菜鸡流泪），所以如果要自己写的话，要花不少的时间成本去学习html、css、jsp等等，所以我决定利用工具和模板，搭建一个自己的个人主页，我觉得可以在搭建完再反过来利用现成的代码来学习上述的那些建站需要的技能，作为学习的实例。
 为什么我选择了Hugo 在参观别人的blog时，我偶然看到了一个用hugo搭建的blog，这里可以放个链接：nanshu.wang，整个页面，无论是排版还是主题风格都和我理想中的blog相差无几，在对于建站工具没有更深了解的情况下，我直接选择了hugo，当然在选择后我了解到了Hugo的一些优点，这也使我坚定了用Hugo建站的想法。
  Hugo 使用的GO语言是比较新的语言； Hugo 是最新的生成器，功能方面也肯定集成了之前其他生成器的优点； 不用安装，windows下只需要一个exe程序，就可以生成静态文件了，建站过程方便。  Hugo的安装和配置 因为关于Hugo的安装教程在网上可以找到很多文章，而且并没有什么操作难度，也几乎不会碰到什么问题，只是不要忘记配置环境变量，所以这一部分我只简略说说。 首先进行下载安装,访问Hugo，选择相应的版本下载并解压。
 接着将hugo.exe所在目录添加到环境变量path后面，然后打开win&#43;rcmd，输入
-hugo version 如果返回相应的版本信息则说明安装配置成功。"/>
+hugo version 如果返回相应的版本信息则说明安装配置成功。
+除此以外还需要安装 Git（下载链接）
+用来将生成好的网页推送至github服务器，相应的安装教程网上都可以找到，此处不再赘述。
+Hugo静态网页生成 Hugo自称The world’s fastest framework for building websites，在生成网页和配置网页的过程中，我感觉Hugo的语法的确很简单，没有什么繁琐的需要记忆的代码，网页的生成速度也很快，我逐渐体会到了Hugo自称的fastest。在物理和心理两个角度，给予使用者更多的便捷，这可能就是Hugo火起来的原因吧。废话不多说，进入正题。我决定先把搭建过程的所有代码一并展示出来，让读者体会到用Hugo生成一个静态网页到底有多少工作量。 在cmd中进入"/>
 
 
 
@@ -271,6 +277,24 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 					
 				
 			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#hugo%e9%9d%99%e6%80%81%e7%bd%91%e9%a1%b5%e7%94%9f%e6%88%90" onclick="onNavClick(`#hugo静态网页生成-nav`)" id="hugo静态网页生成-nav">
+									Hugo静态网页生成
+								</a>
+							</li>
+						
+						
+					
+				
+			
 		</ul>
 	</div>
 
@@ -445,6 +469,24 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 					
 				
 			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#hugo%e9%9d%99%e6%80%81%e7%bd%91%e9%a1%b5%e7%94%9f%e6%88%90" onclick="onNavClick(`#hugo静态网页生成-nav`)" id="hugo静态网页生成-nav">
+									Hugo静态网页生成
+								</a>
+							</li>
+						
+						
+					
+				
+			
 		</ul>
 	</div>
 
@@ -501,7 +543,7 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
                 
             >
                 <div class="post-title">
-                    Hugo静态个人主页的搭建过程
+                    Hugo&#43;Github个人主页的搭建过程
                     
                     <div class="post-meta">
                         
@@ -537,12 +579,19 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 <h2 id="hugo的安装和配置">Hugo的安装和配置</h2>
 <p>因为关于Hugo的安装教程在网上可以找到很多文章，而且并没有什么操作难度，也几乎不会碰到什么问题，只是不要忘记配置环境变量，所以这一部分我只简略说说。
 首先进行下载安装,访问<a href="https://github.com/gohugoio/hugo/releases">Hugo</a>，选择相应的版本下载并解压。</p>
-<p><img src="https://raw.githubusercontent.com/HHU-Vincent/MarkdownPhotos/master/Hugo%20build%20process/hugodownload.jpg" alt="hugodownload"></p>
+<p><img src="../../static/hugobuild/hugodownload.jpg" alt="hugodownload">
+<!-- raw HTML omitted --></p>
 <p>接着将hugo.exe所在目录添加到环境变量path后面，然后打开win+rcmd，输入</p>
 <div class="highlight"><pre style="background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-fallback" data-lang="fallback">hugo version
 </code></pre></div><p>如果返回相应的版本信息则说明安装配置成功。</p>
 <p><img src="https://raw.githubusercontent.com/HHU-Vincent/MarkdownPhotos/master/Hugo%20build%20process/hugoversion.jpg" alt="hugoversion"></p>
-
+<p>除此以外还需要安装 <a href="https://git-scm.com/downloads">Git</a>（下载链接）</p>
+<p><img src="https://raw.githubusercontent.com/HHU-Vincent/MarkdownPhotos/master/Hugo%20build%20process/gitdownload.jpg" alt="gitdownload"></p>
+<p>用来将生成好的网页推送至github服务器，相应的安装教程网上都可以找到，此处不再赘述。</p>
+<h2 id="hugo静态网页生成">Hugo静态网页生成</h2>
+<p>Hugo自称The world’s fastest framework for building websites，在生成网页和配置网页的过程中，我感觉Hugo的语法的确很简单，没有什么繁琐的需要记忆的代码，网页的生成速度也很快，我逐渐体会到了Hugo自称的fastest。在物理和心理两个角度，给予使用者更多的便捷，这可能就是Hugo火起来的原因吧。废话不多说，进入正题。我决定先把搭建过程的所有代码一并展示出来，让读者体会到用Hugo生成一个静态网页到底有多少工作量。
+在cmd中进入</p>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-fallback" data-lang="fallback"></code></pre></div>
                     
                     <HR width="100%" id="EOF">
 		    <p style="color:#777;">Last modified on 2020-07-20</p>
