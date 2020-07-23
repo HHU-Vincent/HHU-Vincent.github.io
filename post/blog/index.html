@@ -675,9 +675,9 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 <p>然后打开win+rcmd，输入</p>
 <div class="highlight"><pre style="background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-fallback" data-lang="fallback">hugo version
 </code></pre></div><p>如果返回相应的版本信息则说明安装配置成功。</p>
-<p><img src="https://raw.githubusercontent.com/HHU-Vincent/MarkdownPhotos/master/Hugo%20build%20process/hugoversion.jpg" alt="hugoversion"></p>
+<p><img src="https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/hugoversion.jpg" alt="hugoversion"></p>
 <p>除此以外还需要安装 <a href="https://git-scm.com/downloads">Git</a>（下载链接）</p>
-<p><img src="https://raw.githubusercontent.com/HHU-Vincent/MarkdownPhotos/master/Hugo%20build%20process/gitdownload.jpg" alt="gitdownload"></p>
+<p><img src="https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/gitdownload.jpg" alt="gitdownload"></p>
 <p>用来将生成好的网页推送至github服务器，相应的安装教程网上都可以找到，此处不再赘述。</p>
 <h2 id="hugo静态网页生成">Hugo静态网页生成</h2>
 <p>Hugo自称The world’s fastest framework for building websites，在生成网页和配置网页的过程中，我感觉Hugo的语法的确很简单，没有什么繁琐的需要记忆的代码，网页的生成速度也很快，我逐渐体会到了Hugo自称的fastest。在物理和心理两个角度，给予使用者更多的便捷，这可能就是Hugo火起来的原因吧。废话不多说，进入正题。</p>
@@ -690,22 +690,22 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 <li>方法二：运行cmd.exe，输入下方指令，在指定路径生成blog文件夹，即静态网页文件。这里要注意的是，指定的路径必须为空，或者不存在（hugo将自动生成）</li>
 </ul>
 <div class="highlight"><pre style="background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-fallback" data-lang="fallback">hugo new site 路径
-</code></pre></div><p><img src="https://raw.githubusercontent.com/HHU-Vincent/MarkdownPhotos/master/Hugo%20build%20process/hugositecreate.png" alt="hugositecreate"></p>
+</code></pre></div><p><img src="https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/hugositecreate.png" alt="hugositecreate"></p>
 <p>  我们来看下生成的blog文件夹的内容：</p>
-<p><img src="https://raw.githubusercontent.com/HHU-Vincent/MarkdownPhotos/master/Hugo%20build%20process/whatsinblog.png" alt="whatsinblog"></p>
+<p><img src="https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/whatsinblog.png" alt="whatsinblog"></p>
 <p>  这里我们只需要大概了解一下就可以，如果只是使用blog，我们只需要了解页面的基本配置就可以，这个之后也会讲到。</p>
 <h3 id="2主题选择及安装方法">2.主题选择及安装方法：</h3>
 <p>  Hugo给使用者提供了很多现成的themes，风格各异，侧重也不同，我们只需要安装相应的主题并且配置即可使用，不需要自己设计页面样式，这也是用hugo建站的省力之处。我们可以访问官网以获取主题：<a href="https://themes.gohugo.io/">Hugo Themes</a>，选择blog分类，挑选你喜欢的主题。我将以我使用的 <a href="https://themes.gohugo.io/hugo-theme-diary/">diary</a> 主题为例介绍下载安装方法：</p>
 <ul>
 <li>下载方法一：进入主题页面，点击download，进入github页面，选择code，下载.zip文件，并解压到先前创建的../blog/themes文件夹。接着打开blog\config.toml，添加主题配置，theme=&quot;hugo-theme-diary-master&rdquo;，引号中的命名即themes文件夹中的主题文件夹名。</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/HHU-Vincent/MarkdownPhotos/master/Hugo%20build%20process/downloadthemezip.png" alt="downloadthemezip"></p>
+<p><img src="https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/downloadthemezip.png" alt="downloadthemezip"></p>
 <ul>
 <li>下载方法二：进入主题页面，点击download，进入github页面，复制网址，打开cmd.exe进入blog/themes文件夹，输入</li>
 </ul>
 <div class="highlight"><pre style="background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-fallback" data-lang="fallback">git clone https://github.com/AmazingRise/hugo-theme-diary
 </code></pre></div><p>  直接将主题文件下载到thenes文件夹，使用VPN可以解决下载速度慢的问题。</p>
-<p><img src="https://raw.githubusercontent.com/HHU-Vincent/MarkdownPhotos/master/Hugo%20build%20process/gitclonethemesuccess.png" alt="gitclonethemesuccess"></p>
+<p><img src="https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/gitclonethemesuccess.png" alt="gitclonethemesuccess"></p>
 <p>  下载完之后同样在config.toml中修改或添加theme配置，同上，即可使主题生效。</p>
 <ul>
 <li>如何判断主题是否生效？
@@ -713,7 +713,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 </ul>
 <div class="highlight"><pre style="background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-fallback" data-lang="fallback">hugo server -D
 </code></pre></div><p>  生成静态文件，并开启本地预览服务器。接着在浏览器中访问http://localhost:1313/，即可预览。显示如下图即说明主题配置成功：</p>
-<p><img src="https://raw.githubusercontent.com/HHU-Vincent/MarkdownPhotos/master/Hugo%20build%20process/themesetsuccess.png" alt="themesetsuccess"></p>
+<p><img src="https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/themesetsuccess.png" alt="themesetsuccess"></p>
+<p>编辑中&hellip;&hellip;</p>
 
                     
                     <HR width="100%" id="EOF">
@@ -726,8 +727,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
             <nav class="post-pagination">
 
                 
-                <a class="newer-posts" href="https://hhu-vincent.github.io/test2/">
-			Next<br>Test2
+                <a class="newer-posts" href="https://hhu-vincent.github.io/about/">
+			Next<br>关于我
                 </a>
                 
                 
