@@ -26,9 +26,9 @@ hugo version 如果返回相应的版本信息则说明安装配置成功。
 除此以外还需要安装 Git（下载链接）
 用来将生成好的网页推送至github服务器，相应的安装教程网上都可以找到，此处不再赘述。
 Hugo静态网页生成 Hugo自称The world’s fastest framework for building websites，在生成网页和配置网页的过程中，我感觉Hugo的语法的确很简单，没有什么繁琐的需要记忆的代码，网页的生成速度也很快，我逐渐体会到了Hugo自称的fastest。在物理和心理两个角度，给予使用者更多的便捷，这可能就是Hugo火起来的原因吧。废话不多说，进入正题。
-1.网页生成、初识目录：  方法一：运行cmd.exe，进入hugo所在目录，输入下方指令，即可在hugo目录下生成一个blog文件夹，即静态网页文件。  hugo new site blog  方法二：运行cmd.exe，输入下方指令，在指定路径生成blog文件夹，即静态网页文件。这里要注意的是，指定的路径必须为空，或者不存在（hugo将自动生成）  hugo new site 路径  我们来看下生成的blog文件夹的内容：
+1.生成新网页  方法一：运行cmd.exe，进入hugo所在目录，输入下方指令，即可在hugo目录下生成一个blog文件夹，即静态网页文件。  hugo new site blog  方法二：运行cmd.exe，输入下方指令，在指定路径生成blog文件夹，即静态网页文件。这里要注意的是，指定的路径必须为空，或者不存在（hugo将自动生成）  hugo new site 路径  我们来看下生成的blog文件夹的内容：
  这里我们只需要大概了解一下就可以，如果只是使用blog，我们只需要了解页面的基本配置就可以，这个之后也会讲到。
-2.主题选择及安装方法：  Hugo给使用者提供了很多现成的themes，风格各异，侧重也不同，我们只需要安装相应的主题并且配置即可使用，不需要自己设计页面样式，这也是用hugo建站的省力之处。我们可以访问官网以获取主题：Hugo Themes，选择blog分类，挑选你喜欢的主题。我将以我使用的 diary 主题为例介绍下载安装方法：
+2.选择并安装主题  Hugo给使用者提供了很多现成的themes，风格各异，侧重也不同，我们只需要安装相应的主题并且配置即可使用，不需要自己设计页面样式，这也是用hugo建站的省力之处。我们可以访问官网以获取主题：Hugo Themes，选择blog分类，挑选你喜欢的主题。我将以我使用的 diary 主题为例介绍下载安装方法：
  下载方法一：进入主题页面，点击download，进入github页面，选择code，下载.zip文件，并解压到先前创建的../blog/themes文件夹。接着打开blog\config.toml，添加主题配置，theme=&amp;quot;hugo-theme-diary-master&amp;rdquo;，引号中的命名即themes文件夹中的主题文件夹名。   下载方法二：进入主题页面，点击download，进入github页面，复制网址，打开cmd.exe进入blog/themes文件夹，输入  git clone https://github.com/AmazingRise/hugo-theme-diary  直接将主题文件下载到thenes文件夹，使用VPN可以解决下载速度慢的问题。
  下载完之后同样在config.</description>
     </item>

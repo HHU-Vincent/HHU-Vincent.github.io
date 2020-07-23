@@ -58,7 +58,7 @@
 &lt;p&gt;用来将生成好的网页推送至github服务器，相应的安装教程网上都可以找到，此处不再赘述。&lt;/p&gt;
 &lt;h2 id=&#34;hugo静态网页生成&#34;&gt;Hugo静态网页生成&lt;/h2&gt;
 &lt;p&gt;Hugo自称The world’s fastest framework for building websites，在生成网页和配置网页的过程中，我感觉Hugo的语法的确很简单，没有什么繁琐的需要记忆的代码，网页的生成速度也很快，我逐渐体会到了Hugo自称的fastest。在物理和心理两个角度，给予使用者更多的便捷，这可能就是Hugo火起来的原因吧。废话不多说，进入正题。&lt;/p&gt;
-&lt;h3 id=&#34;1网页生成初识目录&#34;&gt;1.网页生成、初识目录：&lt;/h3&gt;
+&lt;h3 id=&#34;1生成新网页&#34;&gt;1.生成新网页&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;方法一：运行cmd.exe，进入hugo所在目录，输入下方指令，即可在hugo目录下生成一个blog文件夹，即静态网页文件。&lt;/li&gt;
 &lt;/ul&gt;
@@ -71,7 +71,7 @@
 &lt;p&gt;  我们来看下生成的blog文件夹的内容：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/whatsinblog.png&#34; alt=&#34;whatsinblog&#34;&gt;&lt;/p&gt;
 &lt;p&gt;  这里我们只需要大概了解一下就可以，如果只是使用blog，我们只需要了解页面的基本配置就可以，这个之后也会讲到。&lt;/p&gt;
-&lt;h3 id=&#34;2主题选择及安装方法&#34;&gt;2.主题选择及安装方法：&lt;/h3&gt;
+&lt;h3 id=&#34;2选择并安装主题&#34;&gt;2.选择并安装主题&lt;/h3&gt;
 &lt;p&gt;  Hugo给使用者提供了很多现成的themes，风格各异，侧重也不同，我们只需要安装相应的主题并且配置即可使用，不需要自己设计页面样式，这也是用hugo建站的省力之处。我们可以访问官网以获取主题：&lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo Themes&lt;/a&gt;，选择blog分类，挑选你喜欢的主题。我将以我使用的 &lt;a href=&#34;https://themes.gohugo.io/hugo-theme-diary/&#34;&gt;diary&lt;/a&gt; 主题为例介绍下载安装方法：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;下载方法一：进入主题页面，点击download，进入github页面，选择code，下载.zip文件，并解压到先前创建的../blog/themes文件夹。接着打开blog\config.toml，添加主题配置，theme=&amp;quot;hugo-theme-diary-master&amp;rdquo;，引号中的命名即themes文件夹中的主题文件夹名。&lt;/li&gt;
@@ -91,7 +91,7 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;hugo server -D
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;  生成静态文件，并开启本地预览服务器。接着在浏览器中访问http://localhost:1313/，即可预览。显示如下图即说明主题配置成功：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/themesetsuccess.png&#34; alt=&#34;themesetsuccess&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;3页面菜单基本配置&#34;&gt;3.页面菜单基本配置：&lt;/h3&gt;
+&lt;h3 id=&#34;3配置基本页面菜单&#34;&gt;3.配置基本页面菜单&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;这部分网上很少看到有教程介绍，我是自己摸索学习的，所以有很多配置我还是不懂的，但是基本的思路都是一样的。首先我们先进入你先前下载的主题的文件夹中，可以看到有一个叫exampleSite的文件夹。&lt;/li&gt;
 &lt;/ul&gt;
@@ -106,9 +106,29 @@
 &lt;p&gt;  在配置过程中，hugo主题自带的文档对于页面的配置也有很大的作用，每个主题都会提供客制化功能，供使用者自行定制页面，在hugo主题下载页面下拉就可以找到，这里放一个diary的例子：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/customization.png&#34; alt=&#34;customization&#34;&gt;&lt;/p&gt;
 &lt;p&gt;  你可以根据客制化指导来更改你页面的配置，丰富页面内容。&lt;/p&gt;
-&lt;h3 id=&#34;4文章的创建和上传&#34;&gt;4.文章的创建和上传&lt;/h3&gt;
+&lt;h3 id=&#34;4创建与编辑文章&#34;&gt;4.创建与编辑文章&lt;/h3&gt;
+&lt;p&gt;1.创建&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;首先我们需要知道，hugo的博客文章以markdown文件的形式写成，在学习文章的创建和上传之前，应该先去学习一下markdown的写法，其次应该了解本地的文章是保存在哪的，文章的标题、标签、类别又是怎么设定的，本文将直接从第二步开始，默认读者会写markdown文档。&lt;/li&gt;
+&lt;li&gt;首先我们需要知道，hugo 的博客文章以 markdown 文件的形式写成，在学习文章的创建和上传之前，应该先去学习一下 markdown 的写法，其次应该了解本地的文章是保存在哪的，文章的标题、标签、类别是怎么设定的，我将直接从第二步开始，默认读者会写 markdown 文档。首先我们进入 blog目录用 hugo 生成一个名为post.md的新文本。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;hugo new post.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;  &lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/newpost.png&#34; alt=&#34;newpost&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;系统返回提示，post.md文件被创建在\blog\content目录下，打开post.md可以看到新生成的markdown的默认配置。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;  &lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/postdefault.png&#34; alt=&#34;postdefault&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;需要知道的是，默认配置是可以修改的，可以方便以后新建文章时减少配置的时间，默认文件位于blog\archetypes，打开后可自行配置tags、categories等默认属性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2.编辑&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;直接用记事本打开.md文件可以直接编辑，但是记事本无法实现实时预览等扩展功能，我使用的编辑器是Atom，是 GitHub 专门为程序员推出的一个跨平台文本编辑器。具有简洁和直观的图形用户界面，并有很多有趣的特点：支持 CSS，HTML，JavaScript 等网页编程语言。它支持宏，自动完成分屏功能，集成了文件管理器，这里小小的推荐一下&lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt;(官网链接)。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;5创建github仓库&#34;&gt;5.创建github仓库&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Step 1:登录Github（&lt;del&gt;不会吧不会吧 不会有人没有github账号吧&lt;/del&gt;）&lt;/li&gt;
+&lt;li&gt;step 2.&lt;a href=&#34;http://www.bilibili.com&#34;&gt;创建所需要的仓库（视频制作中）&lt;/a&gt;：
+这里会以视频的形式为大家演示，点击上文链接，包教包会，想要三连！&lt;/li&gt;
 &lt;/ul&gt;
 - https://hhu-vincent.github.io/post/blog/ - </description>
         </item>

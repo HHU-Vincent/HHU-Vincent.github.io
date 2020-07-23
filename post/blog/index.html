@@ -26,9 +26,9 @@ hugo version 如果返回相应的版本信息则说明安装配置成功。
 除此以外还需要安装 Git（下载链接）
 用来将生成好的网页推送至github服务器，相应的安装教程网上都可以找到，此处不再赘述。
 Hugo静态网页生成 Hugo自称The world’s fastest framework for building websites，在生成网页和配置网页的过程中，我感觉Hugo的语法的确很简单，没有什么繁琐的需要记忆的代码，网页的生成速度也很快，我逐渐体会到了Hugo自称的fastest。在物理和心理两个角度，给予使用者更多的便捷，这可能就是Hugo火起来的原因吧。废话不多说，进入正题。
-1.网页生成、初识目录：  方法一：运行cmd.exe，进入hugo所在目录，输入下方指令，即可在hugo目录下生成一个blog文件夹，即静态网页文件。  hugo new site blog  方法二：运行cmd.exe，输入下方指令，在指定路径生成blog文件夹，即静态网页文件。这里要注意的是，指定的路径必须为空，或者不存在（hugo将自动生成）  hugo new site 路径  我们来看下生成的blog文件夹的内容：
+1.生成新网页  方法一：运行cmd.exe，进入hugo所在目录，输入下方指令，即可在hugo目录下生成一个blog文件夹，即静态网页文件。  hugo new site blog  方法二：运行cmd.exe，输入下方指令，在指定路径生成blog文件夹，即静态网页文件。这里要注意的是，指定的路径必须为空，或者不存在（hugo将自动生成）  hugo new site 路径  我们来看下生成的blog文件夹的内容：
  这里我们只需要大概了解一下就可以，如果只是使用blog，我们只需要了解页面的基本配置就可以，这个之后也会讲到。
-2.主题选择及安装方法：  Hugo给使用者提供了很多现成的themes，风格各异，侧重也不同，我们只需要安装相应的主题并且配置即可使用，不需要自己设计页面样式，这也是用hugo建站的省力之处。我们可以访问官网以获取主题：Hugo Themes，选择blog分类，挑选你喜欢的主题。我将以我使用的 diary 主题为例介绍下载安装方法：
+2.选择并安装主题  Hugo给使用者提供了很多现成的themes，风格各异，侧重也不同，我们只需要安装相应的主题并且配置即可使用，不需要自己设计页面样式，这也是用hugo建站的省力之处。我们可以访问官网以获取主题：Hugo Themes，选择blog分类，挑选你喜欢的主题。我将以我使用的 diary 主题为例介绍下载安装方法：
  下载方法一：进入主题页面，点击download，进入github页面，选择code，下载.zip文件，并解压到先前创建的../blog/themes文件夹。接着打开blog\config.toml，添加主题配置，theme=&quot;hugo-theme-diary-master&rdquo;，引号中的命名即themes文件夹中的主题文件夹名。   下载方法二：进入主题页面，点击download，进入github页面，复制网址，打开cmd.exe进入blog/themes文件夹，输入  git clone https://github.com/AmazingRise/hugo-theme-diary  直接将主题文件下载到thenes文件夹，使用VPN可以解决下载速度慢的问题。
  下载完之后同样在config." />
 <meta property="og:type" content="article" />
@@ -51,9 +51,9 @@ hugo version 如果返回相应的版本信息则说明安装配置成功。
 除此以外还需要安装 Git（下载链接）
 用来将生成好的网页推送至github服务器，相应的安装教程网上都可以找到，此处不再赘述。
 Hugo静态网页生成 Hugo自称The world’s fastest framework for building websites，在生成网页和配置网页的过程中，我感觉Hugo的语法的确很简单，没有什么繁琐的需要记忆的代码，网页的生成速度也很快，我逐渐体会到了Hugo自称的fastest。在物理和心理两个角度，给予使用者更多的便捷，这可能就是Hugo火起来的原因吧。废话不多说，进入正题。
-1.网页生成、初识目录：  方法一：运行cmd.exe，进入hugo所在目录，输入下方指令，即可在hugo目录下生成一个blog文件夹，即静态网页文件。  hugo new site blog  方法二：运行cmd.exe，输入下方指令，在指定路径生成blog文件夹，即静态网页文件。这里要注意的是，指定的路径必须为空，或者不存在（hugo将自动生成）  hugo new site 路径  我们来看下生成的blog文件夹的内容：
+1.生成新网页  方法一：运行cmd.exe，进入hugo所在目录，输入下方指令，即可在hugo目录下生成一个blog文件夹，即静态网页文件。  hugo new site blog  方法二：运行cmd.exe，输入下方指令，在指定路径生成blog文件夹，即静态网页文件。这里要注意的是，指定的路径必须为空，或者不存在（hugo将自动生成）  hugo new site 路径  我们来看下生成的blog文件夹的内容：
  这里我们只需要大概了解一下就可以，如果只是使用blog，我们只需要了解页面的基本配置就可以，这个之后也会讲到。
-2.主题选择及安装方法：  Hugo给使用者提供了很多现成的themes，风格各异，侧重也不同，我们只需要安装相应的主题并且配置即可使用，不需要自己设计页面样式，这也是用hugo建站的省力之处。我们可以访问官网以获取主题：Hugo Themes，选择blog分类，挑选你喜欢的主题。我将以我使用的 diary 主题为例介绍下载安装方法：
+2.选择并安装主题  Hugo给使用者提供了很多现成的themes，风格各异，侧重也不同，我们只需要安装相应的主题并且配置即可使用，不需要自己设计页面样式，这也是用hugo建站的省力之处。我们可以访问官网以获取主题：Hugo Themes，选择blog分类，挑选你喜欢的主题。我将以我使用的 diary 主题为例介绍下载安装方法：
  下载方法一：进入主题页面，点击download，进入github页面，选择code，下载.zip文件，并解压到先前创建的../blog/themes文件夹。接着打开blog\config.toml，添加主题配置，theme=&quot;hugo-theme-diary-master&rdquo;，引号中的命名即themes文件夹中的主题文件夹名。   下载方法二：进入主题页面，点击download，进入github页面，复制网址，打开cmd.exe进入blog/themes文件夹，输入  git clone https://github.com/AmazingRise/hugo-theme-diary  直接将主题文件下载到thenes文件夹，使用VPN可以解决下载速度慢的问题。
  下载完之后同样在config."/>
 
@@ -318,8 +318,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 						
 						
 							<li>
-								<a href="#1%e7%bd%91%e9%a1%b5%e7%94%9f%e6%88%90%e5%88%9d%e8%af%86%e7%9b%ae%e5%bd%95" onclick="onNavClick(`#1网页生成初识目录-nav`)" id="1网页生成初识目录-nav">
-									1.网页生成、初识目录：
+								<a href="#1%e7%94%9f%e6%88%90%e6%96%b0%e7%bd%91%e9%a1%b5" onclick="onNavClick(`#1生成新网页-nav`)" id="1生成新网页-nav">
+									1.生成新网页
 								</a>
 							</li>
 						
@@ -336,8 +336,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 						
 						
 							<li>
-								<a href="#2%e4%b8%bb%e9%a2%98%e9%80%89%e6%8b%a9%e5%8f%8a%e5%ae%89%e8%a3%85%e6%96%b9%e6%b3%95" onclick="onNavClick(`#2主题选择及安装方法-nav`)" id="2主题选择及安装方法-nav">
-									2.主题选择及安装方法：
+								<a href="#2%e9%80%89%e6%8b%a9%e5%b9%b6%e5%ae%89%e8%a3%85%e4%b8%bb%e9%a2%98" onclick="onNavClick(`#2选择并安装主题-nav`)" id="2选择并安装主题-nav">
+									2.选择并安装主题
 								</a>
 							</li>
 						
@@ -354,8 +354,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 						
 						
 							<li>
-								<a href="#3%e9%a1%b5%e9%9d%a2%e8%8f%9c%e5%8d%95%e5%9f%ba%e6%9c%ac%e9%85%8d%e7%bd%ae" onclick="onNavClick(`#3页面菜单基本配置-nav`)" id="3页面菜单基本配置-nav">
-									3.页面菜单基本配置：
+								<a href="#3%e9%85%8d%e7%bd%ae%e5%9f%ba%e6%9c%ac%e9%a1%b5%e9%9d%a2%e8%8f%9c%e5%8d%95" onclick="onNavClick(`#3配置基本页面菜单-nav`)" id="3配置基本页面菜单-nav">
+									3.配置基本页面菜单
 								</a>
 							</li>
 						
@@ -372,8 +372,26 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 						
 						
 							<li>
-								<a href="#4%e6%96%87%e7%ab%a0%e7%9a%84%e5%88%9b%e5%bb%ba%e5%92%8c%e4%b8%8a%e4%bc%a0" onclick="onNavClick(`#4文章的创建和上传-nav`)" id="4文章的创建和上传-nav">
-									4.文章的创建和上传
+								<a href="#4%e5%88%9b%e5%bb%ba%e4%b8%8e%e7%bc%96%e8%be%91%e6%96%87%e7%ab%a0" onclick="onNavClick(`#4创建与编辑文章-nav`)" id="4创建与编辑文章-nav">
+									4.创建与编辑文章
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#5%e5%88%9b%e5%bb%bagithub%e4%bb%93%e5%ba%93" onclick="onNavClick(`#5创建github仓库-nav`)" id="5创建github仓库-nav">
+									5.创建github仓库
 								</a>
 							</li>
 						
@@ -586,8 +604,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 						
 						
 							<li>
-								<a href="#1%e7%bd%91%e9%a1%b5%e7%94%9f%e6%88%90%e5%88%9d%e8%af%86%e7%9b%ae%e5%bd%95" onclick="onNavClick(`#1网页生成初识目录-nav`)" id="1网页生成初识目录-nav">
-									1.网页生成、初识目录：
+								<a href="#1%e7%94%9f%e6%88%90%e6%96%b0%e7%bd%91%e9%a1%b5" onclick="onNavClick(`#1生成新网页-nav`)" id="1生成新网页-nav">
+									1.生成新网页
 								</a>
 							</li>
 						
@@ -604,8 +622,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 						
 						
 							<li>
-								<a href="#2%e4%b8%bb%e9%a2%98%e9%80%89%e6%8b%a9%e5%8f%8a%e5%ae%89%e8%a3%85%e6%96%b9%e6%b3%95" onclick="onNavClick(`#2主题选择及安装方法-nav`)" id="2主题选择及安装方法-nav">
-									2.主题选择及安装方法：
+								<a href="#2%e9%80%89%e6%8b%a9%e5%b9%b6%e5%ae%89%e8%a3%85%e4%b8%bb%e9%a2%98" onclick="onNavClick(`#2选择并安装主题-nav`)" id="2选择并安装主题-nav">
+									2.选择并安装主题
 								</a>
 							</li>
 						
@@ -622,8 +640,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 						
 						
 							<li>
-								<a href="#3%e9%a1%b5%e9%9d%a2%e8%8f%9c%e5%8d%95%e5%9f%ba%e6%9c%ac%e9%85%8d%e7%bd%ae" onclick="onNavClick(`#3页面菜单基本配置-nav`)" id="3页面菜单基本配置-nav">
-									3.页面菜单基本配置：
+								<a href="#3%e9%85%8d%e7%bd%ae%e5%9f%ba%e6%9c%ac%e9%a1%b5%e9%9d%a2%e8%8f%9c%e5%8d%95" onclick="onNavClick(`#3配置基本页面菜单-nav`)" id="3配置基本页面菜单-nav">
+									3.配置基本页面菜单
 								</a>
 							</li>
 						
@@ -640,8 +658,26 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 						
 						
 							<li>
-								<a href="#4%e6%96%87%e7%ab%a0%e7%9a%84%e5%88%9b%e5%bb%ba%e5%92%8c%e4%b8%8a%e4%bc%a0" onclick="onNavClick(`#4文章的创建和上传-nav`)" id="4文章的创建和上传-nav">
-									4.文章的创建和上传
+								<a href="#4%e5%88%9b%e5%bb%ba%e4%b8%8e%e7%bc%96%e8%be%91%e6%96%87%e7%ab%a0" onclick="onNavClick(`#4创建与编辑文章-nav`)" id="4创建与编辑文章-nav">
+									4.创建与编辑文章
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#5%e5%88%9b%e5%bb%bagithub%e4%bb%93%e5%ba%93" onclick="onNavClick(`#5创建github仓库-nav`)" id="5创建github仓库-nav">
+									5.创建github仓库
 								</a>
 							</li>
 						
@@ -772,7 +808,7 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 <p>用来将生成好的网页推送至github服务器，相应的安装教程网上都可以找到，此处不再赘述。</p>
 <h2 id="hugo静态网页生成">Hugo静态网页生成</h2>
 <p>Hugo自称The world’s fastest framework for building websites，在生成网页和配置网页的过程中，我感觉Hugo的语法的确很简单，没有什么繁琐的需要记忆的代码，网页的生成速度也很快，我逐渐体会到了Hugo自称的fastest。在物理和心理两个角度，给予使用者更多的便捷，这可能就是Hugo火起来的原因吧。废话不多说，进入正题。</p>
-<h3 id="1网页生成初识目录">1.网页生成、初识目录：</h3>
+<h3 id="1生成新网页">1.生成新网页</h3>
 <ul>
 <li>方法一：运行cmd.exe，进入hugo所在目录，输入下方指令，即可在hugo目录下生成一个blog文件夹，即静态网页文件。</li>
 </ul>
@@ -785,7 +821,7 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 <p>  我们来看下生成的blog文件夹的内容：</p>
 <p><img src="https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/whatsinblog.png" alt="whatsinblog"></p>
 <p>  这里我们只需要大概了解一下就可以，如果只是使用blog，我们只需要了解页面的基本配置就可以，这个之后也会讲到。</p>
-<h3 id="2主题选择及安装方法">2.主题选择及安装方法：</h3>
+<h3 id="2选择并安装主题">2.选择并安装主题</h3>
 <p>  Hugo给使用者提供了很多现成的themes，风格各异，侧重也不同，我们只需要安装相应的主题并且配置即可使用，不需要自己设计页面样式，这也是用hugo建站的省力之处。我们可以访问官网以获取主题：<a href="https://themes.gohugo.io/">Hugo Themes</a>，选择blog分类，挑选你喜欢的主题。我将以我使用的 <a href="https://themes.gohugo.io/hugo-theme-diary/">diary</a> 主题为例介绍下载安装方法：</p>
 <ul>
 <li>下载方法一：进入主题页面，点击download，进入github页面，选择code，下载.zip文件，并解压到先前创建的../blog/themes文件夹。接着打开blog\config.toml，添加主题配置，theme=&quot;hugo-theme-diary-master&rdquo;，引号中的命名即themes文件夹中的主题文件夹名。</li>
@@ -805,7 +841,7 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 <div class="highlight"><pre style="background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-fallback" data-lang="fallback">hugo server -D
 </code></pre></div><p>  生成静态文件，并开启本地预览服务器。接着在浏览器中访问http://localhost:1313/，即可预览。显示如下图即说明主题配置成功：</p>
 <p><img src="https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/themesetsuccess.png" alt="themesetsuccess"></p>
-<h3 id="3页面菜单基本配置">3.页面菜单基本配置：</h3>
+<h3 id="3配置基本页面菜单">3.配置基本页面菜单</h3>
 <ul>
 <li>这部分网上很少看到有教程介绍，我是自己摸索学习的，所以有很多配置我还是不懂的，但是基本的思路都是一样的。首先我们先进入你先前下载的主题的文件夹中，可以看到有一个叫exampleSite的文件夹。</li>
 </ul>
@@ -820,9 +856,29 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 <p>  在配置过程中，hugo主题自带的文档对于页面的配置也有很大的作用，每个主题都会提供客制化功能，供使用者自行定制页面，在hugo主题下载页面下拉就可以找到，这里放一个diary的例子：</p>
 <p><img src="https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/customization.png" alt="customization"></p>
 <p>  你可以根据客制化指导来更改你页面的配置，丰富页面内容。</p>
-<h3 id="4文章的创建和上传">4.文章的创建和上传</h3>
+<h3 id="4创建与编辑文章">4.创建与编辑文章</h3>
+<p>1.创建</p>
 <ul>
-<li>首先我们需要知道，hugo的博客文章以markdown文件的形式写成，在学习文章的创建和上传之前，应该先去学习一下markdown的写法，其次应该了解本地的文章是保存在哪的，文章的标题、标签、类别又是怎么设定的，本文将直接从第二步开始，默认读者会写markdown文档。</li>
+<li>首先我们需要知道，hugo 的博客文章以 markdown 文件的形式写成，在学习文章的创建和上传之前，应该先去学习一下 markdown 的写法，其次应该了解本地的文章是保存在哪的，文章的标题、标签、类别是怎么设定的，我将直接从第二步开始，默认读者会写 markdown 文档。首先我们进入 blog目录用 hugo 生成一个名为post.md的新文本。</li>
+</ul>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-fallback" data-lang="fallback">hugo new post.md
+</code></pre></div><p>  <img src="https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/newpost.png" alt="newpost"></p>
+<ul>
+<li>系统返回提示，post.md文件被创建在\blog\content目录下，打开post.md可以看到新生成的markdown的默认配置。</li>
+</ul>
+<p>  <img src="https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/postdefault.png" alt="postdefault"></p>
+<ul>
+<li>需要知道的是，默认配置是可以修改的，可以方便以后新建文章时减少配置的时间，默认文件位于blog\archetypes，打开后可自行配置tags、categories等默认属性。</li>
+</ul>
+<p>2.编辑</p>
+<ul>
+<li>直接用记事本打开.md文件可以直接编辑，但是记事本无法实现实时预览等扩展功能，我使用的编辑器是Atom，是 GitHub 专门为程序员推出的一个跨平台文本编辑器。具有简洁和直观的图形用户界面，并有很多有趣的特点：支持 CSS，HTML，JavaScript 等网页编程语言。它支持宏，自动完成分屏功能，集成了文件管理器，这里小小的推荐一下<a href="https://atom.io/">Atom</a>(官网链接)。</li>
+</ul>
+<h3 id="5创建github仓库">5.创建github仓库</h3>
+<ul>
+<li>Step 1:登录Github（<del>不会吧不会吧 不会有人没有github账号吧</del>）</li>
+<li>step 2.<a href="http://www.bilibili.com">创建所需要的仓库（视频制作中）</a>：
+这里会以视频的形式为大家演示，点击上文链接，包教包会，想要三连！</li>
 </ul>
 
                     
