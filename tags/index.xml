@@ -6,62 +6,44 @@
     <description>Recent content in Tags on Vincent</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Nov 2019 11:25:05 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2020 14:53:59 +0800</lastBuildDate>
     
 	<atom:link href="https://hhu-vincent.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Chinese</title>
-      <link>https://hhu-vincent.github.io/tags/chinese/</link>
-      <pubDate>Thu, 14 Nov 2019 11:25:05 -0400</pubDate>
+      <title>git</title>
+      <link>https://hhu-vincent.github.io/tags/git/</link>
+      <pubDate>Thu, 23 Jul 2020 14:53:59 +0800</pubDate>
       
-      <guid>https://hhu-vincent.github.io/tags/chinese/</guid>
+      <guid>https://hhu-vincent.github.io/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>text</title>
-      <link>https://hhu-vincent.github.io/tags/text/</link>
-      <pubDate>Thu, 14 Nov 2019 11:25:05 -0400</pubDate>
+      <title>github</title>
+      <link>https://hhu-vincent.github.io/tags/github/</link>
+      <pubDate>Thu, 23 Jul 2020 14:53:59 +0800</pubDate>
       
-      <guid>https://hhu-vincent.github.io/tags/text/</guid>
+      <guid>https://hhu-vincent.github.io/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>typography</title>
-      <link>https://hhu-vincent.github.io/tags/typography/</link>
-      <pubDate>Sun, 18 Mar 2018 12:13:38 +0530</pubDate>
+      <title>hugo</title>
+      <link>https://hhu-vincent.github.io/tags/hugo/</link>
+      <pubDate>Thu, 23 Jul 2020 14:53:59 +0800</pubDate>
       
-      <guid>https://hhu-vincent.github.io/tags/typography/</guid>
+      <guid>https://hhu-vincent.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Primer</title>
-      <link>https://hhu-vincent.github.io/tags/primer/</link>
-      <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
+      <title>markdown</title>
+      <link>https://hhu-vincent.github.io/tags/markdown/</link>
+      <pubDate>Thu, 23 Jul 2020 14:53:59 +0800</pubDate>
       
-      <guid>https://hhu-vincent.github.io/tags/primer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>todo</title>
-      <link>https://hhu-vincent.github.io/tags/todo/</link>
-      <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
-      
-      <guid>https://hhu-vincent.github.io/tags/todo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>scene</title>
-      <link>https://hhu-vincent.github.io/tags/scene/</link>
-      <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
-      
-      <guid>https://hhu-vincent.github.io/tags/scene/</guid>
+      <guid>https://hhu-vincent.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     

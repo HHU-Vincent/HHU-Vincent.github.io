@@ -33,8 +33,8 @@ Hugo静态网页生成 Hugo自称The world’s fastest framework for building we
  下载完之后同样在config." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hhu-vincent.github.io/post/blog/" />
-<meta property="article:published_time" content="2020-07-20T15:53:59+08:00" />
-<meta property="article:modified_time" content="2020-07-20T15:53:59+08:00" /><meta property="og:site_name" content="My Blog" />
+<meta property="article:published_time" content="2020-07-23T14:53:59+08:00" />
+<meta property="article:modified_time" content="2020-07-23T14:53:59+08:00" /><meta property="og:site_name" content="My Blog" />
 
 
 
@@ -710,12 +710,31 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
                     <div class="post-meta">
                         
                         <time itemprop="datePublished">
-                            2020-07-20 15:53
+                            2020-07-23 14:53
                         </time>
                         
 
                         
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/build-a-blog">build a blog</a>
+                                &nbsp;
+                        
 
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/hugo">hugo</a>
+                                &nbsp;
+                            
+                                <a href="/tags/github">github</a>
+                                &nbsp;
+                            
+                                <a href="/tags/git">git</a>
+                                &nbsp;
+                            
+                                <a href="/tags/markdown">markdown</a>
+                                &nbsp;
+                            
                         
                         
                     </div>
@@ -791,25 +810,24 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
 <li>这部分网上很少看到有教程介绍，我是自己摸索学习的，所以有很多配置我还是不懂的，但是基本的思路都是一样的。首先我们先进入你先前下载的主题的文件夹中，可以看到有一个叫exampleSite的文件夹。</li>
 </ul>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p>  这个文件夹里是你使用的主题的页面的默认配置和测试用的文章，里面的config.toml会帮你把页面基本的主菜单，导航栏等配置好，你只要打开config.toml，把里面的内容复制到blog文件夹中的config.toml中，并删除一些重复配置即可，让我以diary主题为例，看看这样做的效果。</p>
+<p>  这个文件夹里是你使用的主题的页面的默认配置和测试用的文章，里面的config.toml会帮你把页面基本的主菜单，导航栏等配置好，你只要打开config.toml，把里面的内容复制到blog文件夹中的config.toml中，并删除一些重复配置即可，让我以diary主题为例，看看这样做的效果。这里我做一点小小的解释帮助初学者理解，在config中，[[menu.main]]即配置导航菜单，[[params.social]]即配置图标链接。</p>
 <p><img src="https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/changeConfig.png" alt="changeConfig"></p>
 <p>  接着和之前一样在blog目录输入</p>
 <div class="highlight"><pre style="background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-fallback" data-lang="fallback">hugo server -D
 </code></pre></div><p>  生成静态文件，并开启本地预览服务器。接着在浏览器中访问http://localhost:1313/，预览配置，如下：</p>
 <p><img src="https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/basic.png" alt="basic"></p>
-<p>  可以看到页面基本的框架已经成形，你可以对应着网页自行增删改config中的配置。页面标题，导航栏标签栏均可以进行自定义。</p>
+<p>  可以看到页面基本的框架已经成形，你可以对应着网页自行增删改config中的配置。页面标题、导航栏、标签栏均可以进行自定义。</p>
 <p>  在配置过程中，hugo主题自带的文档对于页面的配置也有很大的作用，每个主题都会提供客制化功能，供使用者自行定制页面，在hugo主题下载页面下拉就可以找到，这里放一个diary的例子：</p>
 <p><img src="https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/customization.png" alt="customization"></p>
 <p>  你可以根据客制化指导来更改你页面的配置，丰富页面内容。</p>
 <h3 id="4文章的创建和上传">4.文章的创建和上传</h3>
 <ul>
-<li>首先我们需要知道上传的文章在本地是保存在哪的，其实就是保存在上文提到的blog/content/post中，我们可以使用exampleSite/post中的测试用文本进行测试，打开一个测试文本观察文本的配置：</li>
+<li>首先我们需要知道，hugo的博客文章以markdown文件的形式写成，在学习文章的创建和上传之前，应该先去学习一下markdown的写法，其次应该了解本地的文章是保存在哪的，文章的标题、标签、类别又是怎么设定的，本文将直接从第二步开始，默认读者会写markdown文档。</li>
 </ul>
-<p><img src="https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/loading.png" alt="chapter1"></p>
 
                     
                     <HR width="100%" id="EOF">
-		    <p style="color:#777;">Last modified on 2020-07-20</p>
+		    <p style="color:#777;">Last modified on 2020-07-23</p>
                     
                 </div>
             </div>
@@ -824,8 +842,8 @@ Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopene
                 
                 
                 
-                <a class="older-posts" href="https://hhu-vincent.github.io/post/chinese/">
-			Previous<br>测试用：中文文本
+                <a class="older-posts">
+			Previous<br>No older posts.
                 </a>
                 
             </nav>
