@@ -86,12 +86,31 @@
 &lt;p&gt;  下载完之后同样在config.toml中修改或添加theme配置，同上，即可使主题生效。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;如何判断主题是否生效？
-在完成上述两个方法重的一个后，回到blog目录，输入&lt;/li&gt;
+在完成上述两个方法中的一个后，回到blog目录，输入&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;hugo server -D
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;  生成静态文件，并开启本地预览服务器。接着在浏览器中访问http://localhost:1313/，即可预览。显示如下图即说明主题配置成功：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/themesetsuccess.png&#34; alt=&#34;themesetsuccess&#34;&gt;&lt;/p&gt;
-&lt;p&gt;编辑中&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;h3 id=&#34;3页面菜单基本配置&#34;&gt;3.页面菜单基本配置：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;这部分网上很少看到有教程介绍，我是自己摸索学习的，所以有很多配置我还是不懂的，但是基本的思路都是一样的。首先我们先进入你先前下载的主题的文件夹中，可以看到有一个叫exampleSite的文件夹。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;  这个文件夹里是你使用的主题的页面的默认配置和测试用的文章，里面的config.toml会帮你把页面基本的主菜单，导航栏等配置好，你只要打开config.toml，把里面的内容复制到blog文件夹中的config.toml中，并删除一些重复配置即可，让我以diary主题为例，看看这样做的效果。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/changeConfig.png&#34; alt=&#34;changeConfig&#34;&gt;&lt;/p&gt;
+&lt;p&gt;  接着和之前一样在blog目录输入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;hugo server -D
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;  生成静态文件，并开启本地预览服务器。接着在浏览器中访问http://localhost:1313/，预览配置，如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/basic.png&#34; alt=&#34;basic&#34;&gt;&lt;/p&gt;
+&lt;p&gt;  可以看到页面基本的框架已经成形，你可以对应着网页自行增删改config中的配置。页面标题，导航栏标签栏均可以进行自定义。&lt;/p&gt;
+&lt;p&gt;  在配置过程中，hugo主题自带的文档对于页面的配置也有很大的作用，每个主题都会提供客制化功能，供使用者自行定制页面，在hugo主题下载页面下拉就可以找到，这里放一个diary的例子：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/customization.png&#34; alt=&#34;customization&#34;&gt;&lt;/p&gt;
+&lt;p&gt;  你可以根据客制化指导来更改你页面的配置，丰富页面内容。&lt;/p&gt;
+&lt;h3 id=&#34;4文章的创建和上传&#34;&gt;4.文章的创建和上传&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;首先我们需要知道上传的文章在本地是保存在哪的，其实就是保存在上文提到的blog/content/post中，我们可以使用exampleSite/post中的测试用文本进行测试，打开一个测试文本观察文本的配置：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/loading.png&#34; alt=&#34;chapter1&#34;&gt;&lt;/p&gt;
 - https://hhu-vincent.github.io/post/blog/ - </description>
         </item>
     
