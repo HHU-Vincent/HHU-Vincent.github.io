@@ -26,84 +26,84 @@
     
     
         <item>
-        <title>Hugo&#43;Github个人主页的搭建过程</title>
+        <title>Hugo&#43;GitHub个人主页的搭建过程</title>
         <link>https://hhu-vincent.github.io/post/blog/</link>
         <pubDate>Thu, 23 Jul 2020 14:53:59 +0800</pubDate>
         
         <guid>https://hhu-vincent.github.io/post/blog/</guid>
         <description>Vincent https://hhu-vincent.github.io/post/blog/ -&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;hr&gt;
-&lt;p&gt;很早以前我就有搭建一个个人博客的想法，用来记录一下自己的学习过程和学习成果，恰巧最近有空闲的时间，于是我开始了这次实践。对于建站我属于完全零基础，所以一切都要从头学起。&lt;/p&gt;
+&lt;p&gt;很早以前我就有搭建一个个人博客的想法，用来记录一下自己的学习过程和学习成果，恰巧最近有空闲的时间，于是我开始了这次实践。对于建站我属于完全&lt;strong&gt;零基础&lt;/strong&gt;，所以一切都要从头学起。&lt;/p&gt;
 &lt;h2 id=&#34;自己写or用工具搭建&#34;&gt;自己写or用工具搭建？&lt;/h2&gt;
-&lt;p&gt;这个是我第一个纠结的地方，说纠结其实也不然，因为我根本就不会自己写（菜鸡流泪），所以如果要自己写的话，要花不少的时间成本去学习html、css、jsp等等，所以我决定利用工具和模板，搭建一个自己的个人主页，我觉得可以在搭建完再反过来利用现成的代码来学习上述的那些建站需要的技能，作为学习的实例。&lt;/p&gt;
+&lt;p&gt;这个是我第一个纠结的地方，说纠结其实也不然，因为我根本就不会自己写，所以如果要自己写的话，要花不少的时间成本去学习，所以我决定利用工具和模板，搭建一个自己的个人主页，我觉得可以在搭建完再反过来利用现成的代码来学习上述的那些建站需要的技能，作为学习的实例。&lt;/p&gt;
 &lt;h2 id=&#34;为什么我选择了hugo&#34;&gt;为什么我选择了Hugo&lt;/h2&gt;
-&lt;p&gt;在参观别人的blog时，我偶然看到了一个用hugo搭建的blog，这里可以放个链接：&lt;a href=&#34;http://nanshu.wang/&#34;&gt;nanshu.wang&lt;/a&gt;，整个页面，无论是排版还是主题风格都和我理想中的blog相差无几，在对于建站工具没有更深了解的情况下，我直接选择了hugo，当然在选择后我了解到了Hugo的一些优点，这也使我坚定了用Hugo建站的想法。&lt;/p&gt;
+&lt;p&gt;在参观别人的 blog 时，我偶然看到了一个用 hugo 搭建的 blog ，这里可以放个链接：&lt;a href=&#34;http://nanshu.wang/&#34;&gt;nanshu.wang&lt;/a&gt;，整个页面，无论是排版还是主题风格都和我理想中的 blog 相差无几，在对于建站工具没有更深了解的情况下，我直接选择了 hugo ，当然在选择后我了解到了 hugo 的一些优点，这也使我坚定了用 hugo 建站的想法。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Hugo 使用的GO语言是比较新的语言；&lt;/li&gt;
-&lt;li&gt;Hugo 是最新的生成器，功能方面也肯定集成了之前其他生成器的优点；&lt;/li&gt;
+&lt;li&gt;hugo 使用的 GO语言 是比较新的语言；&lt;/li&gt;
+&lt;li&gt;hugo 是最新的生成器，功能方面也肯定集成了之前其他生成器的优点；&lt;/li&gt;
 &lt;li&gt;不用安装，windows下只需要一个exe程序，就可以生成静态文件了，建站过程方便。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;hugo的安装和配置&#34;&gt;Hugo的安装和配置&lt;/h2&gt;
-&lt;p&gt;因为关于Hugo的安装教程在网上可以找到很多文章，而且并没有什么操作难度，也几乎不会碰到什么问题，只是不要忘记配置环境变量，所以这一部分我只简略说说。
-首先进行下载安装,访问&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo&lt;/a&gt;，选择相应的版本下载并解压。
-&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/hugodownload.jpg&#34; alt=&#34;hugodownload&#34;&gt;&lt;/p&gt;
-&lt;p&gt;接着将hugo.exe所在目录添加到环境变量path后面&lt;/p&gt;
+&lt;p&gt;因为关于 hugo 的安装教程在网上可以找到很多文章，而且并没有什么操作难度，也几乎不会碰到什么问题，只是&lt;strong&gt;不要忘记配置环境变量&lt;/strong&gt;，所以这一部分我只简略说说。
+首先进行下载安装,访问&lt;a href=&#34;https://github.com/goHugoio/Hugo/releases&#34;&gt;Hugo&lt;/a&gt;，选择相应的版本下载并解压。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/hugodownload.jpg&#34; alt=&#34;hugodownload&#34;&gt;&lt;/p&gt;
+&lt;p&gt;接着将 hugo.exe 所在目录添加到&lt;strong&gt;环境变量path&lt;/strong&gt;后面&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/environmentvariable.png&#34; alt=&#34;environmentvariable&#34;&gt;&lt;/p&gt;
 &lt;p&gt;然后打开win+rcmd，输入&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;hugo version
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果返回相应的版本信息则说明安装配置成功。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/hugoversion.jpg&#34; alt=&#34;hugoversion&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/hugoversion.jpg&#34; alt=&#34;Hugoversion&#34;&gt;&lt;/p&gt;
 &lt;p&gt;除此以外还需要安装 &lt;a href=&#34;https://git-scm.com/downloads&#34;&gt;Git&lt;/a&gt;（下载链接）&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/gitdownload.jpg&#34; alt=&#34;gitdownload&#34;&gt;&lt;/p&gt;
-&lt;p&gt;用来将生成好的网页推送至github服务器，相应的安装教程网上都可以找到，此处不再赘述。&lt;/p&gt;
+&lt;p&gt;用来将生成好的网页推送至 GitHub 服务器，相应的安装教程网上都可以找到，此处不再赘述。&lt;/p&gt;
 &lt;h2 id=&#34;hugo静态网页生成&#34;&gt;Hugo静态网页生成&lt;/h2&gt;
-&lt;p&gt;Hugo自称The world’s fastest framework for building websites，在生成网页和配置网页的过程中，我感觉Hugo的语法的确很简单，没有什么繁琐的需要记忆的代码，网页的生成速度也很快，我逐渐体会到了Hugo自称的fastest。在物理和心理两个角度，给予使用者更多的便捷，这可能就是Hugo火起来的原因吧。废话不多说，进入正题。&lt;/p&gt;
+&lt;p&gt;hugo 自称 The world’s fastest framework for building websites ，在生成网页和配置网页的过程中，我感觉 hugo 的语法的确很简单，没有什么繁琐的需要记忆的代码，网页的生成速度也很快，我逐渐体会到了 hugo 自称的fastest。在物理和心理两个角度，给予使用者更多的便捷，这可能就是 hugo 火起来的原因吧。废话不多说，进入正题。&lt;/p&gt;
 &lt;h3 id=&#34;1生成新网页&#34;&gt;1.生成新网页&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;方法一：运行cmd.exe，进入hugo所在目录，输入下方指令，即可在hugo目录下生成一个blog文件夹，即静态网页文件。&lt;/li&gt;
+&lt;li&gt;方法一：运行cmd.exe，进入&lt;strong&gt;hugo所在目录&lt;/strong&gt;，输入下方指令，即可在 hugo目录 下生成一个blog文件夹，即静态网页文件。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;hugo new site blog
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;方法二：运行cmd.exe，输入下方指令，在指定路径生成blog文件夹，即静态网页文件。这里要注意的是，指定的路径必须为空，或者不存在（hugo将自动生成）&lt;/li&gt;
+&lt;li&gt;方法二：运行cmd.exe，输入下方指令，在指定路径生成 blog文件夹 ，即静态网页文件。这里要注意的是，指定的路径&lt;strong&gt;必须为空，或者不存在&lt;/strong&gt;（hugo将自动生成）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;hugo new site 路径
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/hugositecreate.png&#34; alt=&#34;hugositecreate&#34;&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/hugositecreate.png&#34; alt=&#34;Hugositecreate&#34;&gt;&lt;/p&gt;
 &lt;p&gt;  我们来看下生成的blog文件夹的内容：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/whatsinblog.png&#34; alt=&#34;whatsinblog&#34;&gt;&lt;/p&gt;
 &lt;p&gt;  这里我们只需要大概了解一下就可以，如果只是使用blog，我们只需要了解页面的基本配置就可以，这个之后也会讲到。&lt;/p&gt;
 &lt;h3 id=&#34;2选择并安装主题&#34;&gt;2.选择并安装主题&lt;/h3&gt;
-&lt;p&gt;  Hugo给使用者提供了很多现成的themes，风格各异，侧重也不同，我们只需要安装相应的主题并且配置即可使用，不需要自己设计页面样式，这也是用hugo建站的省力之处。我们可以访问官网以获取主题：&lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo Themes&lt;/a&gt;，选择blog分类，挑选你喜欢的主题。我将以我使用的 &lt;a href=&#34;https://themes.gohugo.io/hugo-theme-diary/&#34;&gt;diary&lt;/a&gt; 主题为例介绍下载安装方法：&lt;/p&gt;
+&lt;p&gt;  hugo 给使用者提供了很多现成的themes，风格各异，侧重也不同，我们只需要安装相应的主题并且配置即可使用，不需要自己设计页面样式，这也是用hugo建站的省力之处。我们可以访问官网以&lt;strong&gt;获取主题&lt;/strong&gt;：&lt;a href=&#34;https://themes.goHugo.io/&#34;&gt;Hugo Themes&lt;/a&gt;，选择blog分类，挑选你喜欢的主题。我将以我使用的 &lt;a href=&#34;https://themes.goHugo.io/Hugo-theme-diary/&#34;&gt;diary&lt;/a&gt; 主题为例介绍下载安装方法：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;下载方法一：进入主题页面，点击download，进入github页面，选择code，下载.zip文件，并解压到先前创建的../blog/themes文件夹。接着打开blog\config.toml，添加主题配置，theme=&amp;quot;hugo-theme-diary-master&amp;rdquo;，引号中的命名即themes文件夹中的主题文件夹名。&lt;/li&gt;
+&lt;li&gt;下载方法一：进入主题页面，点击download，进入 GitHub 页面，选择code，&lt;strong&gt;下载.zip文件&lt;/strong&gt;，并解压到先前创建的../blog/themes文件夹。接着打开blog\config.toml，添加主题配置，theme=&amp;quot;hugo-theme-diary-master&amp;rdquo;，引号中的命名即themes文件夹中的主题文件夹名。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/downloadthemezip.png&#34; alt=&#34;downloadthemezip&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;下载方法二：进入主题页面，点击download，进入github页面，复制网址，打开cmd.exe进入blog/themes文件夹，输入&lt;/li&gt;
+&lt;li&gt;下载方法二：进入主题页面，点击download，进入 GitHub 页面，复制网址，打开cmd.exe进入blog/themes文件夹，输入&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;git clone https://github.com/AmazingRise/hugo-theme-diary
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;git clone https://github.com/AmazingRise/Hugo-theme-diary
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;  直接将主题文件下载到thenes文件夹，使用VPN可以解决下载速度慢的问题。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/gitclonethemesuccess.png&#34; alt=&#34;gitclonethemesuccess&#34;&gt;&lt;/p&gt;
-&lt;p&gt;  下载完之后同样在config.toml中修改或添加theme配置，同上，即可使主题生效。&lt;/p&gt;
+&lt;p&gt;  下载完之后同样在 config.toml 中修改或添加theme配置，同上，即可使主题生效。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;如何判断主题是否生效？
-在完成上述两个方法中的一个后，回到blog目录，输入&lt;/li&gt;
+在完成上述两个方法中的一个后，&lt;strong&gt;回到blog目录&lt;/strong&gt;，输入&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;hugo server -D
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;  生成静态文件，并开启本地预览服务器。接着在浏览器中访问http://localhost:1313/，即可预览。显示如下图即说明主题配置成功：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;  生成静态文件，并开启本地预览服务器。接着在浏览器中&lt;strong&gt;访问http://localhost:1313&lt;/strong&gt;，即可预览，在之后的编辑过程中，都是以这个方式进行预览和调试的，其中使用的hugo server -D是一条很常用的命令。显示如下图即说明主题配置成功：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/themesetsuccess.png&#34; alt=&#34;themesetsuccess&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;3配置基本页面菜单&#34;&gt;3.配置基本页面菜单&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;这部分网上很少看到有教程介绍，我是自己摸索学习的，所以有很多配置我还是不懂的，但是基本的思路都是一样的。首先我们先进入你先前下载的主题的文件夹中，可以看到有一个叫exampleSite的文件夹。&lt;/li&gt;
+&lt;li&gt;这部分网上很少看到有教程介绍，我是自己摸索学习的，所以有很多配置我还是不懂的，但是基本的思路都是一样的。首先我们先进入你先前下载的主题的文件夹中，可以看到有一个叫&lt;strong&gt;exampleSite&lt;/strong&gt;的文件夹。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;p&gt;  这个文件夹里是你使用的主题的页面的默认配置和测试用的文章，里面的config.toml会帮你把页面基本的主菜单，导航栏等配置好，你只要打开config.toml，把里面的内容复制到blog文件夹中的config.toml中，并删除一些重复配置即可，让我以diary主题为例，看看这样做的效果。这里我做一点小小的解释帮助初学者理解，在config中，[[menu.main]]即配置导航菜单，[[params.social]]即配置图标链接。&lt;/p&gt;
+&lt;p&gt;  这个文件夹里是你使用的主题的页面的默认配置和测试用的文章，里面的 config.toml 会帮你把页面基本的主菜单，导航栏等配置好，你只要打开 config.toml ，把里面的内容复制到 blog 文件夹中的 config.toml 中，并删除一些重复配置即可，让我以diary主题为例，看看这样做的效果。这里我做一点小小的解释帮助初学者理解，在config中，[[menu.main]]即配置导航菜单，[[params.social]]即配置图标链接。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/changeConfig.png&#34; alt=&#34;changeConfig&#34;&gt;&lt;/p&gt;
 &lt;p&gt;  接着和之前一样在blog目录输入&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;hugo server -D
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;  生成静态文件，并开启本地预览服务器。接着在浏览器中访问http://localhost:1313/，预览配置，如下：&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;  生成静态文件，并开启本地预览服务器。接着在浏览器中&lt;strong&gt;访问http://localhost:1313&lt;/strong&gt;，预览配置，如下：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/basic.png&#34; alt=&#34;basic&#34;&gt;&lt;/p&gt;
-&lt;p&gt;  可以看到页面基本的框架已经成形，你可以对应着网页自行增删改config中的配置。页面标题、导航栏、标签栏均可以进行自定义。&lt;/p&gt;
-&lt;p&gt;  在配置过程中，hugo主题自带的文档对于页面的配置也有很大的作用，每个主题都会提供客制化功能，供使用者自行定制页面，在hugo主题下载页面下拉就可以找到，这里放一个diary的例子：&lt;/p&gt;
+&lt;p&gt;  可以看到页面基本的框架已经成形，你可以对应着网页&lt;strong&gt;自行增删改config中的配置&lt;/strong&gt;。页面标题、导航栏、标签栏均可以进行自定义。&lt;/p&gt;
+&lt;p&gt;  在配置过程中，hugo主题自带的文档对于页面的配置也有很大的作用，每个主题都会提供&lt;strong&gt;客制化功能&lt;/strong&gt;，供使用者自行定制页面，在hugo主题下载页面下拉就可以找到，这里放一个diary的例子：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/customization.png&#34; alt=&#34;customization&#34;&gt;&lt;/p&gt;
 &lt;p&gt;  你可以根据客制化指导来更改你页面的配置，丰富页面内容。&lt;/p&gt;
 &lt;h3 id=&#34;4创建与编辑文章&#34;&gt;4.创建与编辑文章&lt;/h3&gt;
@@ -118,21 +118,53 @@
 &lt;/ul&gt;
 &lt;p&gt;  &lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/postdefault.png&#34; alt=&#34;postdefault&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;需要知道的是，默认配置是可以修改的，可以方便以后新建文章时减少配置的时间，默认文件位于blog\archetypes，打开后可自行配置tags、categories等默认属性。&lt;/li&gt;
+&lt;li&gt;需要知道的是，&lt;strong&gt;默认配置是可以修改的&lt;/strong&gt;，可以方便以后新建文章时减少配置的时间，默认文件位于blog\archetypes，打开后可自行配置tags、categories等默认属性。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;2.编辑&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;直接用记事本打开.md文件可以直接编辑，但是记事本无法实现实时预览等扩展功能，我使用的编辑器是Atom，是 GitHub 专门为程序员推出的一个跨平台文本编辑器。具有简洁和直观的图形用户界面，并有很多有趣的特点：支持 CSS，HTML，JavaScript 等网页编程语言。它支持宏，自动完成分屏功能，集成了文件管理器，这里小小的推荐一下&lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt;(官网链接)。&lt;/li&gt;
+&lt;li&gt;直接用记事本打开.md文件可以直接编辑，但是记事本无法实现实时预览等扩展功能，我使用的编辑器是&lt;strong&gt;Atom&lt;/strong&gt;，是 GitHub 专门为程序员推出的一个跨平台文本编辑器。具有简洁和直观的图形用户界面，并有很多有趣的特点：支持 CSS，HTML，JavaScript 等网页编程语言。它支持宏，自动完成分屏功能，集成了文件管理器，这里小小的推荐一下&lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt;(官网链接)。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;5创建github仓库&#34;&gt;5.创建github仓库&lt;/h3&gt;
+&lt;h2 id=&#34;页面上传github&#34;&gt;页面上传GitHub&lt;/h2&gt;
+&lt;h3 id=&#34;1创建github仓库&#34;&gt;1.创建GitHub仓库&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Step 1：登录Github（&lt;del&gt;不会吧不会吧 不会有人没有github账号吧&lt;/del&gt;）&lt;/li&gt;
-&lt;li&gt;step 2：&lt;a href=&#34;http://www.bilibili.com&#34;&gt;创建所需要的仓库（视频制作中）&lt;/a&gt;：
-这里会以视频的形式为大家演示，点击上文链接，包教包会，想要三连！&lt;/li&gt;
-&lt;li&gt;step 3：&lt;/li&gt;
+&lt;li&gt;Step 1：登录GitHub&lt;/li&gt;
+&lt;li&gt;step 2：创建Repository&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/newRepository.png&#34; alt=&#34;newRepository&#34;&gt;&lt;/p&gt;
+&lt;p&gt;  填写配置内容，创建仓库：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/createRepository.png&#34; alt=&#34;createRepository&#34;&gt;&lt;/p&gt;
+&lt;p&gt;  创建完之后查看仓库的&lt;strong&gt;SSH路径&lt;/strong&gt;，在之后把本地文件推上 GitHub 服务器时会用到：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/SSH.png&#34; alt=&#34;SSH&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2部署工作&#34;&gt;2.部署工作&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;step 1：首先需要在本地生成一个用于上传的&lt;strong&gt;静态文件夹public&lt;/strong&gt;，在cmd.exe中进入blog目录，输入：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;hugo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;  你会发现 blog文件夹 中自动生成了 public文件夹 ，这个文件夹里的就是网页文件，到时候我们要上传到服务器的就是这个 public文件夹。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;step 2：部署到 GitHub ，注意这一步都是在public路径中进行，避免敲错，我给出代码，可以直接复制粘贴：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:3;-o-tab-size:3;tab-size:3&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;//依次执行如下命令:
+git init
+git remote rm origin
+git remote add origin SSH路径   //换成自己的GitHub上的ssh路径,在上面已经讲解如何查看ssh路径
+git add -A
+git commit -m &amp;#34;first commit&amp;#34;    //引号中是你这次上传行为的名字可以自行更改
+git pull    //如果不行使用: git pull --rebase origin master
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;  相关的Git命令的具体含义可以自行学习了解，用多了就会熟悉。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;step 3：全部执行完后查看 GitHub 仓库，就会发现文件都已经上传了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/complete.png&#34; alt=&#34;complete&#34;&gt;&lt;/p&gt;
+&lt;p&gt;  最后我们要在仓库中找到 config.toml ，将&lt;strong&gt;baseurl&lt;/strong&gt;改为自己的仓库路径，也就是仓库名：xxx.github.io，之后通过 xxx.github.io 就可以访问你的网站了。&lt;/p&gt;
+&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
+&lt;p&gt;  这是我的第一篇博客，不论是网页的搭建还是文章的编辑都花了不少的时间，虽然页面仍然不够完善，但是最后看到成果的时候，还是会觉得所有花的时间都是&lt;strong&gt;值得&lt;/strong&gt;的，之后我也会完善我的网页，丰富网页内容，能够多记录自己的想法和经历，下一篇文章我准备讲一讲在文章中如何以“优雅”的方式添加图片，并且保证图片加载速度正常。
+  最后，要&lt;strong&gt;感谢&lt;/strong&gt;各位读者！&lt;/p&gt;
 - https://hhu-vincent.github.io/post/blog/ - </description>
         </item>
+    
+    
     
     
   </channel>
