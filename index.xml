@@ -5,7 +5,7 @@
     <description>Recent content on Vincent</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2020 14:53:59 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2020 15:28:59 +0800</lastBuildDate>
     
         <atom:link href="https://hhu-vincent.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,12 +14,10 @@
         <item>
         <title>关于我</title>
         <link>https://hhu-vincent.github.io/about/</link>
-        <pubDate>Sun, 19 Jul 2020 15:35:58 +0800</pubDate>
+        <pubDate>Fri, 24 Jul 2020 15:29:00 +0800</pubDate>
         
         <guid>https://hhu-vincent.github.io/about/</guid>
-        <description>Vincent https://hhu-vincent.github.io/about/ -&lt;p&gt;111&lt;br&gt;
-2&lt;br&gt;
-3&lt;/p&gt;
+        <description>Vincent https://hhu-vincent.github.io/about/ -&lt;p&gt;我 一个&lt;strong&gt;复杂而有趣&lt;/strong&gt;的人&lt;/p&gt;
 - https://hhu-vincent.github.io/about/ - </description>
         </item>
     
@@ -28,7 +26,7 @@
         <item>
         <title>Hugo&#43;GitHub个人主页的搭建过程</title>
         <link>https://hhu-vincent.github.io/post/blog/</link>
-        <pubDate>Thu, 23 Jul 2020 14:53:59 +0800</pubDate>
+        <pubDate>Fri, 24 Jul 2020 15:28:59 +0800</pubDate>
         
         <guid>https://hhu-vincent.github.io/post/blog/</guid>
         <description>Vincent https://hhu-vincent.github.io/post/blog/ -&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
@@ -159,12 +157,10 @@ git push -u origin master
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/hhu-vincent/MarkdownPhotos/raw/master/Hugo%20build%20process/complete.png&#34; alt=&#34;complete&#34;&gt;&lt;/p&gt;
 &lt;p&gt;  最后我们要在仓库中找到 config.toml ，将&lt;strong&gt;baseurl&lt;/strong&gt;改为自己的仓库路径，也就是仓库名：xxx.github.io，之后通过 xxx.github.io 就可以访问你的网站了。&lt;/p&gt;
 &lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
-&lt;p&gt;  这是我的第一篇博客，不论是网页的搭建还是文章的编辑都花了不少的时间，虽然页面仍然不够完善，但是最后看到成果的时候，还是会觉得所有花的时间都是&lt;strong&gt;值得&lt;/strong&gt;的，之后我也会完善我的网页，丰富网页内容，能够多记录自己的想法和经历，下一篇文章我准备讲一讲在文章中如何以“优雅”的方式添加图片，并且保证图片加载速度正常。
-  最后，要&lt;strong&gt;感谢&lt;/strong&gt;各位读者！&lt;/p&gt;
+&lt;p&gt;  这是我的第一篇博客，不论是网页的搭建还是文章的编辑都花了不少的时间，虽然页面仍然不够完善，但是最后看到成果的时候，还是会觉得所有花的时间都是&lt;strong&gt;值得&lt;/strong&gt;的，之后我也会完善我的网页，丰富网页内容，能够多记录自己的想法和经历，下一篇文章我准备讲一讲在文章中如何以“优雅”的方式添加图片，并且保证图片加载速度正常。&lt;/p&gt;
+&lt;p&gt;  最后，要&lt;strong&gt;感谢&lt;/strong&gt;各位读者！&lt;/p&gt;
 - https://hhu-vincent.github.io/post/blog/ - </description>
         </item>
-    
-    
     
     
   </channel>

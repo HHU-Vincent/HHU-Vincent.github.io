@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>git on Vincent</title>
+    <title>Git on Vincent</title>
     <link>https://hhu-vincent.github.io/tags/git/</link>
-    <description>Recent content in git on Vincent</description>
+    <description>Recent content in Git on Vincent</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2020 14:53:59 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2020 15:28:59 +0800</lastBuildDate>
     
 	<atom:link href="https://hhu-vincent.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Hugo&#43;GitHub个人主页的搭建过程</title>
       <link>https://hhu-vincent.github.io/post/blog/</link>
-      <pubDate>Thu, 23 Jul 2020 14:53:59 +0800</pubDate>
+      <pubDate>Fri, 24 Jul 2020 15:28:59 +0800</pubDate>
       
       <guid>https://hhu-vincent.github.io/post/blog/</guid>
       <description>前言  很早以前我就有搭建一个个人博客的想法，用来记录一下自己的学习过程和学习成果，恰巧最近有空闲的时间，于是我开始了这次实践。对于建站我属于完全零基础，所以一切都要从头学起。
