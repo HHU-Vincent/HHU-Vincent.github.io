@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Vincent</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jul 2020 15:28:59 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 14 May 2021 10:06:59 +0800</lastBuildDate>
     
 	<atom:link href="https://hhu-vincent.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HIFI</title>
+      <link>https://hhu-vincent.github.io/tags/hifi/</link>
+      <pubDate>Fri, 14 May 2021 10:06:59 +0800</pubDate>
+      
+      <guid>https://hhu-vincent.github.io/tags/hifi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reproduction</title>
+      <link>https://hhu-vincent.github.io/tags/reproduction/</link>
+      <pubDate>Fri, 14 May 2021 10:06:59 +0800</pubDate>
+      
+      <guid>https://hhu-vincent.github.io/tags/reproduction/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Git</title>
